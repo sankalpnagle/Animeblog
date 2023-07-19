@@ -78,13 +78,13 @@ export default function Read() {
                 <div className='d-flex flex-row bd-highlight mb-3'>
                     {readAll.map(ob => <Link style={{ textDecoration: "none " }} to={`/blog/`}> <div class="card p-2 mx-3 custom-card " style={{ border: " none", maxWidth: "540px", maxWidth: "324px", maxHeight: "128px", display: "block" }}>
                         <div class="row g-0 d-flex">
-                            <div class="col-md-4" style={{ position: "relative" }}>
-                                <img src={ob.image} style={{ width: "100%", height: "100%", position: "absolute", objectFit: "cover" }} class="img-fluid rounded-start" alt="..." />
+                            <div class="col-md-4">
+                                <img src={ob.image} style={{ height: "121px", objectFit: "cover" }} class="img-fluid rounded-start" alt="..." />
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body" style={{ margin: "0px", padding: "0px 15px" }}>
-                                    <h5 class="card-title" style={{ styleFontSize: "18px" }}>Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <h5 class="card-title" style={{ styleFontSize: "18px" }}>{ob.title}</h5>
+                                    <p class="card-text">{ob.description}</p>
                                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                                 </div>
                             </div>

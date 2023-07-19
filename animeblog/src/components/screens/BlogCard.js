@@ -39,7 +39,7 @@ export default function BlogCard({
                     <img src={image} className="card-img-top" alt="..." />
                     <div className="card-body">
                         <h5 className="card-title">{title}</h5>
-                        <p className="card-text">{description}</p>
+                        <p className="card-text" style={{ height: "174px", overflow: "hidden" }}>{description}</p>
                         <div className='d-flex'>
                             <button onClick={handleMore} className="btn btn-primary">more</button>
                             {isUser && (<>
